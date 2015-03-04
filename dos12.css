@@ -1,0 +1,17 @@
+/* custom dos12 look here - rewrite the web in 22 lines */	
+
+#COVERALL {
+	pointer-events:none;
+	position:fixed;
+	z-index:10000000;
+	background:  -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.75,transparent), color-stop(0.75,rgba(255,255,255,0.7)), to(rgba(255,255,255,0.7))), -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0,255,0,0.4)), to(rgba(0,255,0,0.4)));	
+	background-size: 100% 2px, 100% 100%;	
+	background-repeat:repeat-y, no-repeat;
+	width:100%;
+	height:100%;
+	top:0; 
+	left:0; 	
+}
+html {		
+	/* pointer-events:none !important; */
+-webkit-filter: sepia(100%) saturate(185%) brightness(111%) hue-rotate(73deg) invert(100%) hue-rotate(180deg) saturate(400%) brightness(111%);	}	embed, video, object, img {		-webkit-filter: invert(100%) brightness(150%) contrast(90%);	}	a:hover {		background:lime !important;		color:white !important;	}	* {		box-shadow:none !important;		border-radius: 0 !important;		-webkit-appearance: none !important;	}	*:not([class*=icon]) {		font-family:"Andale Mono","Courier New" !important;	}	a {		border:2px solid lime !important;	} 

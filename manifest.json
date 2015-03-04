@@ -1,0 +1,10 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+	"manifest_version":2,	"name":"phosphor",	"description":"Cris Stringfellow's DevArt Entry, March 2014",	"author":"Cris Stringfellow",	"version":"1",	"permissions":[		"tabs",		"<all_urls>"	],	"content_scripts":[		{			"matches": ["<all_urls>"],			"css": ["html5reset.css", "dos12.css"],			"js": ["heavylift.js"],			"all_frames":true		}	,
+	{
+		"matches":["<all_urls>"],
+		"js":["layer.js"],
+		"run_at" : "document_start"
+	}]
+
+}
